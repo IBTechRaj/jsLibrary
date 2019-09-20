@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Book List</title>
+</head>
+<body style="background-color:gray;">
+
+    <div class="container">
+        <div class="library-name">
+        <h1>Microverse Library</h1>
+    </div>
+   
+	<hr>
+        <h1>Add Book</h1>
+		<hr>
+        <form action="" id="book-form">
+            <div style="margin-top:3%;">
+                <label for="title">Title</label>
+                <input type="text" id="title" >
+            </div>
+            <div style="margin-top:2%;">
+                <label for="author">Author</label>
+                <input type="text" id="author" >
+            </div >
+            <div style="margin-top:2%;">
+                <label for="ISBN">ISBN#</label>
+                <input type="text" id="ISBN" >
+            </div>
+            <div style="margin-top:2%;">
+                <label for="pages">Pages#</label>
+                <input type="text" id="pages" >
+            </div>
+            <div style="margin-top:2%;">
+                <label for="read">Read? </label>
+                <input type="text" id="read" >
+            </div>
+            
+            <div style="margin-top:2%;margin-bottom:3%;">
+                <input type="submit" value="Add" id="submit" style="margin-left:100px;">
+            </div>
+        </form>
+        <hr>
+        <table style="margin-top:2%; margin-left:10%;" cellspacing=10>
+            <thead >
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Pages</th>
+                    <th>Read?</th>
+                    
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
